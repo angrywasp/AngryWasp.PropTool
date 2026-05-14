@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../External/AngryWasp.Build/AngryWasp.Build.Application.targets"/>
+  <PropertyGroup>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>proptool</ToolCommandName>
+    <PackageId>AngryWasp.PropTool</PackageId>
+    <PackageDescription>A tool for uploading firmware to a P8X32A propeller and serial monitoring</PackageDescription>
+    <RepositoryUrl>https://github.com/angrywasp/AngryWasp.PropTool</RepositoryUrl>
+    <Author>Angry Wasp</Author>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="10.0.8"/>
+    <PackageReference Include="AngryWasp.Cli" Version="3.0.10"/>
+    <PackageReference Include="AngryWasp.Serializer" Version="*"/>
+  </ItemGroup>
+</Project>
